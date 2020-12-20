@@ -1,11 +1,16 @@
+import styled from 'astroturf';
 import logo from './logo.svg';
 import './App.css';
+
+let Logo = styled.img`
+  width: ${50 * 2}px;
+`
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Logo src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
